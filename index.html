@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylle.css">
+    <title>Distribución Binomial</title>
+</head>
+<body>
+    <section>
+    <div class="contenedor">
+        
+        <div class="opciones">  
+                <h1>Distribución Binomial.</h1>
+            <h3>
+                <p>N = Número de ensayos/experimentos.</p>               
+                <p>P = Probabilidad de éxito.</p>
+                <p>X = Número de éxitos.</p>
+            </h3>
+            <hr>
+                <form name="datos">
+                    <div class="llenar">
+                        
+                        <input type="text" name="n" size="3" placeholder="N">
+                        <input type="text" name="p" size="3" placeholder="P">
+                        <input type="text" name="k" size="3" placeholder="X">
+                    </div>
+                    
+                    <div class="llenar">
+                        <input class=" boton" type="button" value="Calcular" onClick="bin()">
+                    </div>
+                    <hr>
+                    <div class="llenar">
+                        <label for="" class="labl" >Probabilidad de fracaso:</label>
+                        <br>
+                        <input class="resultado" type="text" name="fracaso" disabled>
+                        <br>
+                        <br>
+                        <label for="" class="labl">Probabilidad:</label>
+                        <br>
+                        <input class="resultado" type="text" name="prob" disabled>
+                    </div>
+                </form>
+            
+                
+        </div>
+        
+    </div>
+
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
